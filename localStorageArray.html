@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let products = new Array();
+        let product = {id:1,name:"Kishor",DOJ:2018};
+        products.push(product);
+         product = {id:2,name:"kuldeep",DOJ:2021};
+        products.push(product);
+        product = {id:2,name:"Abhijit",DOJ:2021};
+        products.push(product);
+
+        console.log(products);
+
+        localStorage.setItem("employee", JSON.stringify(products));
+        let employee = JSON.parse(localStorage.getItem('employee'));
+        console.log(employee);
+    </script>
+</body>
+</html>
